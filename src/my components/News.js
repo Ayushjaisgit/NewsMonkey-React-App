@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
-import styles from './news.css'
+
 
 export class News extends Component {
 
@@ -62,8 +62,8 @@ export class News extends Component {
         </div>
         <div className="container d-flex justify-content-between">
           {/* { this is lect28 } */}
-          <button type="button" disabled={this.state.page=1} class="btn btn-outline-dark" onClick={this.handlePrevClick}>Previous  &larr;</button>
-          <button type="button" class="btn btn-outline-dark" onClick={this.handleNextClick}>Next  &rarr;</button>
+          <button type="button" disabled={this.state.page=1} className="btn btn-outline-dark" onClick={this.handlePrevClick}>Previous  &larr;</button>
+          <button type="button" className="btn btn-outline-dark" onClick={this.handleNextClick}>Next  &rarr;</button>
         </div>
       </div>
     )
